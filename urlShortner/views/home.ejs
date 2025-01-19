@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>URL shortner</h1>
+    <% if (locals.id) { %>
+     <p> url generated : <%= id %></p>
+    <% } %>
+    <form method="post" action="/url/">
+    <input type="text" placeholder="Enter url " name="url" id="data">
+    <button type="submit" onclick="perform()">Generate</button>
+</form>
+<% if (locals.Urls) { %>
+ 
+
+    <table>
+        <thead>
+            
+            <td>url</td>
+            <td>redirect URls</td>
+            <td> NoOfClicks</td>
+        
+        </thead>
+        <table>
+        
+        <% Urls.forEach(Url => { %>
+            <tr>
+        <td><%= Url.shortedURL  %></td> 
+        <td><%= Url.URL %></td> 
+        <td><%= Url.noOFClick %></td> 
+    </tr>
+        <% }) %>
+         
+        </table>
+        
+    </table>
+    <% } %>
+    <script>
+ function perform(){
+    document.getElementById(data).value = "";
+ }
+</script>
+</ol>
+</body>
+</html>

@@ -1,0 +1,6 @@
+At 2024-08-23T14:27:14.331Z  server got request from ::1 on /
+At 2024-08-23T14:27:14.692Z  server got request from ::1 on /favicon.ico
+At 2024-08-23T14:27:28.122Z  server got request from ::1 on /about
+At 2024-08-23T14:27:28.225Z  server got request from ::1 on /favicon.ico
+At 2024-08-23T14:27:44.933Z  server got request from ::1 on /search
+At 2024-08-23T14:27:45.041Z  server got request from ::1 on /favicon.ico

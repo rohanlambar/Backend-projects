@@ -1,0 +1,19 @@
+
+URL Shortner
+
+create a URL shortner service which provide a shorter version of original url and direct to the original url
+
+it also keep track of  no of clicks 
+
+Routes 
+
+POST/URL => create a custom url for submitted URL and return in following format example.com/random-id
+
+GET/:id => redirect original URL 
+
+GET/URL/analytics/:id  => return no of click on shortnered url 
+
+
+
+
+
